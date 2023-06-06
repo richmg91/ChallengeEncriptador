@@ -1,0 +1,40 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo_alura.png" alt="Logo Alura">
+        <h1>Encriptador de texto</h1>
+    </header> 
+    <main>
+        <section>
+             <textarea class="campo-texto" cols="30" rows="10" placeholder="Ingresa el texto que deseas encriptar/desencriptar aquí..."></textarea>
+             <div>
+                 <p class="informacion"><img class="signo-admiracion" src="img/signo_admiracion.png" alt="Signo de admiración">¡Solo letras minúsculas y sin acentos!</p>
+             </div>
+                <div class="botones">
+                  <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                  <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+       </section> 
+      <section>
+          <textarea  class="campo-lectura" readonly cols="20" rows="10"></textarea> <!--readonly hace que el textarea sea solo de lectura y no de escritura -->
+          <div>
+            <button class="boton-copiar" onclick="copiar()">Copiar texto</button>
+          </div>
+      </section>
+    </main>
+
+<footer>
+    <P class="texto-footer">Designed by Ricardo Marbán</P>
+</footer>
+<script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,196 @@
+
+*{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background: linear-gradient(#E4F2FF, #003E75);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 0.01px #003E75;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex; /*Permite alinear la distribucion de espacio de elementos uno al lado del otro*/
+    margin-left: 250px;
+}
+
+.logo {
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/*AREA DE TEXTOS*/
+.campo-texto {
+    height: 400px;
+    width: 650px;
+    margin: 70px 70px 70px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px 10px #000000;
+    font-size: 25px;
+    
+}
+
+::placeholder { /*modifica el diseño del placeholder*/
+    font-size: 25px;
+    padding: 10px 10px;
+    color: #747A9E ;
+}
+
+.campo-lectura {
+    width: 370px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px 10px #000000;    
+    background-image: url("img/muñeco3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    height: 600px;
+    margin-top: 70px;
+    position: fixed;
+    font-size: 25px;
+}
+
+textarea {
+    resize: none; /*resize evita que el usuario controle el cambio de tamaño del textarea*/
+    outline: none; /*Evita que se seleccionen los text area*/
+}
+
+.informacion {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.signo-admiracion {
+    margin: 0 5px 0 20px;
+    filter: brightness(250%);
+}
+
+/*BOTONES*/
+.botones {
+    display: flex;
+}
+
+.boton-encriptar {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 30px 0 20px;
+    color: #ffffff;
+    background: linear-gradient(#000A4A, #4C65FF);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.boton-encriptar:hover {
+    background: linear-gradient(#4C65FF, #000A4A)
+}
+
+.boton-desencriptar {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #E4F2FF;
+    font-size: 22px;
+}
+
+.boton-desencriptar:hover {
+    background: linear-gradient(#F3F4FF, #4783B8)
+}
+
+.boton-copiar {
+    border: 1px solid #4783B8;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 38px;
+    background: #E4F2FF;
+}
+
+.boton-copiar:hover {
+    background: linear-gradient(#F3F4FF, #4783B8)
+}
+
+/*FOOTER*/
+.texto-footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 60px;
+}
+
+/*Media queries*/
+
+@media  screen and (max-width: 480px) {
+
+    .logo {
+        margin: 0;
+        padding: 0;
+    }
+    
+     h1 {
+        font-size: 35px;
+        margin: 15px 0;
+     }
+
+    main {
+        display: inline;
+    }
+
+     .campo-texto {
+        width: 350px;
+        height: 350px;
+        margin: 0;
+     }
+
+     .campo-lectura {
+        position: relative;
+        margin: 0;
+        width: 350px;
+        height: 250px;
+        background-image: url(img/ningun_mensaje.png);
+        background-size: 220px;
+     }
+
+     .signo-admiracion {
+        margin: 0;
+     }
+
+     .informacion {
+        font-size: 15px;
+        margin: 30px 0 0 0;
+     }
+
+     .boton-encriptar, .boton-desencriptar {
+        margin: 30px 0;
+        display: inline;
+        width: 250px;
+        height: 50px;
+     }
+   
+     .texto-footer {
+        text-align: center;
+        margin: 30px 0;
+     }
+
+     .boton-copiar {
+        margin: 0 0 0 30px;
+        position: relative;
+     }
+}
